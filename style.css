@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+#container {
+  width: 70%;
+  max-width: 640px;
+  margin: 2rem auto;
+  background: #f8f8ff;
+  overflow: hidden;
+}
+
+/********* Header ********/
+
+header {
+  position: relative;
+  background-color: #00bfff;
+  height: 6rem;
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+  z-index: 99;
+}
+
+h1 {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  font-size: 1.25rem;
+  color: white;
+}
+
+/* Navigation Button */
+
+.navButton {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  width: 3rem;
+  padding: 0.25rem;
+  border: 1px solid gray;
+  border-radius: 0.2rem;
+  text-align: center;
+  z-index: 999;
+}
+
+.navButton a {
+  color: #FFF;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+
+
+
+/********** Navigation *********/
+
+nav {
+  position: relative;
+}
+
+/* Menu Level-1 */
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 0.3125rem rgba(0,0,0,.3);
+}
+
+.menu>li {
+  position: relative;
+  width: 100%;
+}
+
+.menu>li>a {
+  display: block;
+  width: 90%;
+  padding: 1rem 5%;
+  color: #FFF;
+  background-color: rgba(64,64,64,.8);
+  border-top: solid 1px #dda0dd;
+}
+
+.menu>li>a:hover {
+  background-color: ;
+}
+
+.dropButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  padding: 1rem 5%;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background: transparent;
+  border: none;
+}
+
+.dropButton:hover {
+  color: #00bfff;
+}
+
+.dropButton.isClosed::after {
+  content: "＋";
+}
+
+.dropButton.isOpen::after {
+  content: "ー";
+}
+
+/* Menu Level-2 */
+
+.menu-child {
+  /* Noting */
+}
+
+.menu-child>li {
+  position: relative;
+  width: 100%;
+}
+
+.menu-child>li>a {
+  display: black;
+  width: 80%;
+  padding: 1rem 10%;
+  color: #FFF;
+  background-color: rgba(128,128,128,.8);
+  border-top: solid 1 #00fa9a;
+}
+
+.menu-child>li>a:hover {
+  background-color:#00bfff;
+}
+
+/******** Article ********/
+
+article {
+  padding: 3rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+  text-align: justify;
+  color: #dda0dd;
+}
+
+.text12 {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  font-weight: bold;
+  line-height: 80px;
+  color: white;
+  text-align: center;
+  background-color: #ff0211;
+  border-radius: 50%;
+}
+
+/******** Footer ********/
+
+footer {
+  background-color: #00bfff;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.8rem;
+  color: white;
+}
